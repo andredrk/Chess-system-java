@@ -17,12 +17,19 @@ public abstract class ChessPiece extends Piece{
 		return color;
 	}
 
+<<<<<<< HEAD
 	public boolean[][] possibleMoves() {
 		return null;
 	}	
 	
+=======
+>>>>>>> f827a40a0033358ac9a88f77a33a5dbf4ae2f0ef
 	protected boolean isThereOpponentPiece(Position position) {
 		ChessPiece p = (ChessPiece)getBoard().piece(position);
 		return p != null && p.getColor() != color;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f827a40a0033358ac9a88f77a33a5dbf4ae2f0ef
