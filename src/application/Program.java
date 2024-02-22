@@ -18,24 +18,16 @@ public class Program {
 		while (true) {
 			try {
 				UI.clearScreen();
-				UI.printBoard(chessMatch.getPieces());
+				UI.printMatch(chessMatch);
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
-				
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> b2d4bb4b21d83adce02cb0992b3e3d69f90839b3
+
 				boolean[][] possibleMoves = chessMatch.possibleMoves(source);
 				UI.clearScreen();
 				UI.printBoard(chessMatch.getPieces(), possibleMoves);
 				System.out.println();
-<<<<<<< HEAD
-=======
-=======
->>>>>>> f827a40a0033358ac9a88f77a33a5dbf4ae2f0ef
->>>>>>> b2d4bb4b21d83adce02cb0992b3e3d69f90839b3
+
 				System.out.print("Target: ");
 				ChessPosition target = UI.readChessPosition(sc);
 				
