@@ -2,6 +2,7 @@ package chess;
 
 import bordgame.Board;
 import bordgame.Piece;
+import bordgame.Position;
 
 public abstract class ChessPiece extends Piece{
 	
@@ -18,6 +19,10 @@ public abstract class ChessPiece extends Piece{
 
 	public boolean[][] possibleMoves() {
 		return null;
+	}	
+	
+	protected boolean isThereOpponentPiece(Position position) {
+		ChessPiece p = (ChessPiece)getBoard().piece(position);
+		return p != null && p.getColor() != color;
 	}
-
 }
