@@ -1,5 +1,6 @@
 package bordgame;
 
+
 public class Position {
 
 	private int row;
@@ -35,5 +36,4 @@ public class Position {
 	public String toString() {
 		return row + ", " + column;
 	}
-	
 }

@@ -52,13 +52,25 @@ public class ChessMatch {
 			throw new ChessException("There is no piece on source position");
 		}
 		if (!board.piece(position).isThereAnyPossibleMove()) {
+<<<<<<< HEAD
+			throw new ChessException("There is no possible moves for the chosen piece");
+=======
 			throw new ChessException("Ther is no possible moves for the chosen piece");		
+>>>>>>> f827a40a0033358ac9a88f77a33a5dbf4ae2f0ef
 		}
 	}
 	
 	private void validateTargetPosition(Position source, Position target) {
 		if (!board.piece(source).possibleMove(target)) {
+<<<<<<< HEAD
 			throw new ChessException("The chosen piece can't move to target position");
+=======
+<<<<<<< HEAD
+			throw new ChessException("The chosen piece can't move to target position");
+=======
+			throw new ChessException("The chosen piece can t move to target position");
+>>>>>>> f827a40a0033358ac9a88f77a33a5dbf4ae2f0ef
+>>>>>>> b2d4bb4b21d83adce02cb0992b3e3d69f90839b3
 		}
 	}
 	
