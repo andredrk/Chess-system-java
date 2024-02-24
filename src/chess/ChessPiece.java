@@ -1,8 +1,8 @@
 package chess;
 
-import bordgame.Board;
-import bordgame.Piece;
-import bordgame.Position;
+import boardgame.Board;
+import boardgame.Piece;
+import boardgame.Position;
 
 public abstract class ChessPiece extends Piece{
 	
